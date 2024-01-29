@@ -15,6 +15,7 @@ module.exports = async (req, res) => {
   try {
     const result = await axios({
       url,
+      timeout: 30000,
       headers: {
         "User-Agent":
           "ClashX Pro/1.72.0.4 (com.west2online.ClashXPro; build:1.72.0.4; macOS 12.0.1) Alamofire/5.4.4",
